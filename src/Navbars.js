@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom'
+
 
 
 
@@ -14,19 +16,19 @@ const Navbars= ()=>{
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <Link class="nav-link" to="Home">Home <span class="sr-only">(current)</span></Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Link</a>
+              <Link class="nav-link" to="Link">Link</Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link disabled" href="#" >Aboutus</a>
+            <Link class="nav-link" to="Aboutus" >Aboutus</Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link disabled" href="#">Contactus</a>
+              <Link class="nav-link" to="Contactus">Contactus</Link>
             </li>
             <li class="nav-item active">
-              <a class="nav-link disabled" href="#">Login</a>
+              <Link class="nav-link" to="Login">Login</Link>
             </li>
             <li class="nav-item active">
               <a class="nav-link disabled" href="#" >Submit</a>
